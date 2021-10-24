@@ -1,8 +1,11 @@
 package com.mprog.movie;
 
+import org.springframework.stereotype.Repository;
+
 import java.util.List;
 import java.util.Optional;
 
+@Repository
 public class MovieDataAccessService implements MovieDao{
     @Override
     public List<Movie> selectMovies() {
